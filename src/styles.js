@@ -6,7 +6,7 @@ export const styles = html `
     <style>
         :host{
             inline-size: 100%;
-            block-size: 250px;
+            block-size: 100%;
             display: block;
             overflow: hidden;
         }
