@@ -1,0 +1,16 @@
+{
+  "name": "over.ai-elements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "my-element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.4",
+    "@webcomponents/webcomponentsjs": "^2.2.1"
+  }
+}
