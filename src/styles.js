@@ -28,10 +28,15 @@ export const styles = html `
             background-size: 800px 104px;
         }
 
-        img{
+        img {
             inline-size: 100%;
             block-size: 100%;
             object-fit: cover;
+            transition: opacity .2s;
+        }
+
+        picture.loading > img {
+            opacity: 0;
         }
 
         @keyframes placeHolderShimmer {
