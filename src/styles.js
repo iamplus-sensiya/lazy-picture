@@ -32,7 +32,7 @@ export const styles = html `
             inline-size: 100%;
             block-size: 100%;
             object-fit: cover;
-            transition: opacity .2s;
+            transition: opacity .35s ease-in;
         }
 
         picture.loading > img {
