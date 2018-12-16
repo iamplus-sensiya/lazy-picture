@@ -12,6 +12,9 @@ class LazyImg extends LitElement {
      */
     static get properties() {
         return {
+            fallback: {
+                type: String
+            },
             src: {
                 type: String
             },
@@ -104,6 +107,11 @@ class LazyImg extends LitElement {
 
         img.onload = () => {
             this.loaded = true;
+            // console.log('loaded', this.loaded);
+            // console.log(img.currentSrc);
+        };
+        img.onerror = () => {
+            this.src = this.fallback;
             // console.log('loaded', this.loaded);
             // console.log(img.currentSrc);
         };
