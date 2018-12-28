@@ -4,6 +4,8 @@
   "description": "",
   "main": "my-element.js",
   "scripts": {
+    "start": "polymer serve",
+    "build": "polymer build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -105,16 +105,11 @@ class LazyImg extends LitElement {
     isInViewUpdate() {
         const img = this.shadowRoot.querySelector('picture img');
 
-        img.onload = () => {
-            this.loaded = true;
-            // console.log('loaded', this.loaded);
-            // console.log(img.currentSrc);
-        };
-        img.onerror = () => {
-            this.src = this.fallback;
-            // console.log('loaded', this.loaded);
-            // console.log(img.currentSrc);
-        };
+        'decode' in img ?
+            img.decode().then(() => this.loaded = true) :
+            img.onload = () => this.loaded = true;
+
+        img.onerror = () => this.src = this.fallback;
     }
 
     showImg() {
