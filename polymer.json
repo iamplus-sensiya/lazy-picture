@@ -2,12 +2,12 @@
     "npm": true,
     "moduleResolution": "node",
     "entrypoint": "src/index.html",
-    "shell": "src/lazy-img.js",
+    "shell": "src/lazy-picture.js",
     "extraDependencies": [
         "node_modules/@webcomponents/webcomponentsjs/**"
     ],
     "builds": [{
-        "name": "lazy-img-build",
+        "name": "lazy-picture-build",
         "bundle": true,
         "js": {
             "minify": true

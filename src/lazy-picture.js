@@ -6,7 +6,7 @@ import {
     styles
 } from './styles';
 
-class LazyImg extends LitElement {
+class LazyPicture extends LitElement {
     /**
      * TODO: Declare a property.
      */
@@ -137,4 +137,4 @@ class LazyImg extends LitElement {
     }
 
 }
-customElements.define('lazy-img', LazyImg);
+customElements.define('lazy-picture', LazyPicture);
