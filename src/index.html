@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script type="module" src="./src/lazy-img.js"></script>
+    <script type="module" src="./src/lazy-picture.js"></script>
     <style>
-        lazy-img {
+        lazy-picture {
             inline-size: 250px;
             block-size: 250px;
             border-radius: 50%;
@@ -18,7 +18,7 @@
 
 <body>
 
-    <h1>Hello lazy-img</h1>
+    <h1>Hello lazy-picture</h1>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vel at temporibus sapiente odio quae
         dolorem
@@ -122,11 +122,11 @@
         asperiores excepturi possimus, cupiditate dolor ea repudiandae quas, reiciendis repellendus similique ratione
         velit. Sit, veritatis?
     </p>
-    <lazy-img src="https://picsum.photos/1980/1020" alt="placeholder image" rootMargin="30%" fallback="https://picsum.photos/200/300">
+    <lazy-picture src="https://picsum.photos/1980/1020" alt="placeholder image" rootMargin="30%" fallback="https://picsum.photos/200/300">
         <source media="(max-width: 465px)" srcset="https://picsum.photos/465/300">
         <source media="(max-width: 650px)" srcset="https://picsum.photos/650/450">
         <source media="(max-width: 1200px)" srcset="https://picsum.photos/1200/700">
-    </lazy-img>
+    </lazy-picture>
 </body>
 
 </html>
